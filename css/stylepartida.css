@@ -1,0 +1,121 @@
+.cuerpo{
+    background: url(imagenes/background-pizarron.jpg)
+}
+header{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: 30px;
+    margin: 0 30px;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+    
+}
+.lapiz{
+    filter: drop-shadow(10px 10px 8px black);
+}
+main{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 81.7%;
+}
+footer{
+    background-color: rgb(151, 88, 57);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px
+}
+#boton{
+    background: transparent;
+    border: solid white 2px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+    transition: 1s;
+}
+#boton:hover{
+    background-color: white;
+    color: black;
+
+}
+.pie{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 4px
+
+}
+#boton{
+    width: 250px;
+    height: 50px;
+
+}
+.botonIniciar{
+    display: block;
+
+}
+/*Aqui comienza el juego*/
+.cuadroDeJuego{
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    border: solid white 2px;
+    border-radius: 33px;
+    position: relative;
+    left: 20%;
+}
+div button{
+    font-family:'Permanent Marker', cursive;
+    font-size: 20px;
+    color: white;
+    width: 6%;
+    height: 6%;
+    margin: 1%;
+    background: transparent;
+    border: solid white 1px;
+    border-radius: 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+div button:hover{
+    background: white;
+    color: black;
+}
+#letras{
+    position: relative;
+    top: 56%;
+}
+.botonesSup{
+    text-align: center;
+}
+.ahorcado{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.palabra{
+    position: relative;
+    top: 56%;
+    font-family:'Permanent Marker', cursive;
+    font-size: 50px;
+    color: white;
+}
+.blanco{
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+.erroneo{
+    background-color: red !important;
+    color: black;
+    cursor: default;
+}
