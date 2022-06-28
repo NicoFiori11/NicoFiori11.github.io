@@ -6,20 +6,21 @@ letras.forEach(boton => {
     boton.addEventListener("click",botonLetra)
 
 });
-var i = 0
 var contadorFallos = 0;
 var letrasPulsadas = []
 function botonLetra(event){
-    i++;
+
     var letraSeleccionada = this.innerText;
-    letrasPulsadas.push(letraSeleccionada)
-    if(letraSeleccionada == letrasPulsadas[i-2]){
-        return;
+    if (letrasPulsadas.length > 0){
+        var valorBooleano = letrasPulsadas.includes(letraSeleccionada);
+        if(valorBooleano == true){
+            return;
+        }
     }
+    letrasPulsadas.push(letraSeleccionada);
     var id = this.id
     var cuadroElegido = document.getElementById(id)
     var haFallado = true
-    var dibujo = [base]
     for(const i in palabraAleatoria){
         if(letraSeleccionada == palabraAleatoria[i]){
             palabraConGuiones = palabraConGuiones.replaceAt(i*2 , letraSeleccionada);
